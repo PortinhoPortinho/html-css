@@ -1,0 +1,11 @@
+#tittle {
+  text-align: center;
+  text-transform: uppercase;
+}
+body {
+  border: 5px solid;
+}
+
+.price {
+  font-style: italic;
+}
