@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,6 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -31,6 +30,11 @@
       .el--8 {
         background-color: crimson;
       }
+      .el {
+        gap: 40px;
+        padding: 20px;
+        border: 1px solid black;
+      }
 
       .container--1 {
         /* STARTER */
@@ -40,19 +44,40 @@
         margin: 40px;
 
         /* CSS GRID */
+        column-gap: 20px;
+        row-gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: 600px;
+        display: none;
       }
-
+      .el--7 {
+      }
+      .el--3 {
+        height: 100px;
+        align-self: end;
+      }
+      .el--6 {
+      }
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
-
+        gap: 50px;
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
